@@ -23,9 +23,8 @@ int main(){
         cout<<"ERRO ao abrir arquivo!";
         exit(1);
     }   
-    
+    enio.imprimeCabecalho();
     while(enio.lerPessoa(arquivo)){
-        cout<<"------------------------------------"<<endl;
         enio.mostraTela();
     }
     

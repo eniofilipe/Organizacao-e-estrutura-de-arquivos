@@ -88,16 +88,14 @@ bool Pessoa::lerPessoa(fstream &arqIn){
     
     char campo[100], diaAux[10], mesAux[10], anoAux[10];
 
-    int tamanho;
+    short tamanho;
 
-  
-    arqIn.getline(campo, 4, '|');
-    tamanho = atoi(campo);
+    arqIn.read(reinterpret_cast<char*>(&tamanho), sizeof(short));
 
     if( !arqIn.good() && arqIn.eof())
         return false;
 
-    arqIn.getline(campo, tamanho, '&');
+    arqIn.read(campo,tamanho);
     
     stringstream aux(campo);
 
@@ -142,14 +140,22 @@ bool Pessoa::escreveArquivo(fstream &arqOut){
 
 }
 
+void Pessoa::imprimeCabecalho(){
+    cout<<setfill('-')<<setw(62)<<'-'<<endl;
+    cout<<"| "<<"NOME"<<setfill(' ')<<setw(11);
+    cout<<" | "<<"SOBRENOME"<<setfill(' ')<<setw(6);
+    cout<<" | "<<"TELEFONE"<<setfill(' ')<<setw(10);
+    cout<<" | "<<"DT NASC"<<setfill(' ')<<setw(6)<<" | "<<endl;
+    cout<<setfill('-')<<setw(62)<<'-'<<endl;
+}
 
 void Pessoa::mostraTela(){
 
-    cout<<"Nome: "<<nome<<endl;
-    cout<<"Sobrenome: "<<sobrenome<<endl;
-    cout<<"Telefone: "<<telefone<<endl;
+    cout<<"| "<<nome<<setw(15- nome.length())<<setfill(' ')<<" | ";
+    cout<<sobrenome<<setfill(' ')<<setw(15 - sobrenome.length())<<" | ";
+    cout<<telefone<<" | ";
     stringstream aux;
-    aux<<setfill('0')<<setw(2)<<dia<<"/"<<setw(2)<<mes<<"/"<<setw(4)<<ano;
-    cout<<"Data de nascimento: "<<aux.str()<<endl;
-
+    aux<<setfill('0')<<setw(2)<<dia<<"/"<<setw(2)<<mes<<"/"<<setw(4)<<ano<<" | ";
+    cout<<aux.str()<<endl;
+    cout<<setfill('-')<<setw(62)<<'-'<<endl;
 }

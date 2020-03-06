@@ -113,12 +113,11 @@ bool Pessoa::lerPessoa(fstream &arqIn, fstream &arqOut){
 
     stringstream aux, auxOut;
 
-    aux<<"|"<<nome<<"|"<<sobrenome<<"|"<<telefone<<"|"<<getDataNascimento()<<"&";
-
-    cout<<aux.str()<<" TAMANHO = "<<aux.str().length()<<endl;
-    auxOut<<aux.str().length()<<aux.str();
-    cout<<auxOut.str()<<endl;
-    arqOut<<auxOut.str();
+    aux<<nome<<"|"<<sobrenome<<"|"<<telefone<<"|"<<getDataNascimento();
+    short tam =  aux.str().length();
+    cout<<aux.str()<<" TAMANHO = "<<tam<<endl;
+    arqOut.write(reinterpret_cast<const char*>(&tam), sizeof(short));
+    arqOut.write(aux.str().c_str(), tam);
 
     return true;
 }

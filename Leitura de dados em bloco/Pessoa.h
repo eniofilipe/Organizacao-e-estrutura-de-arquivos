@@ -36,6 +36,7 @@ class Pessoa {
 
         ///Mostrar na tela
         void mostraTela();
+        void imprimeCabecalho();
 
         //Ler do Arquivo
         bool lerPessoa(fstream &arqIn);
