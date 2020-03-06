@@ -141,21 +141,21 @@ bool Pessoa::escreveArquivo(fstream &arqOut){
 }
 
 void Pessoa::imprimeCabecalho(){
-    cout<<setfill('-')<<setw(62)<<'-'<<endl;
-    cout<<"| "<<"NOME"<<setfill(' ')<<setw(11);
+    cout<<setfill('-')<<setw(72)<<'-'<<endl;
+    cout<<"| "<<"NOME"<<setfill(' ')<<setw(21);
     cout<<" | "<<"SOBRENOME"<<setfill(' ')<<setw(6);
     cout<<" | "<<"TELEFONE"<<setfill(' ')<<setw(10);
     cout<<" | "<<"DT NASC"<<setfill(' ')<<setw(6)<<" | "<<endl;
-    cout<<setfill('-')<<setw(62)<<'-'<<endl;
+    cout<<setfill('-')<<setw(72)<<'-'<<endl;
 }
 
 void Pessoa::mostraTela(){
 
-    cout<<"| "<<nome<<setw(15- nome.length())<<setfill(' ')<<" | ";
+    cout<<"| "<<nome<<setw(25 - nome.length())<<setfill(' ')<<" | ";
     cout<<sobrenome<<setfill(' ')<<setw(15 - sobrenome.length())<<" | ";
     cout<<telefone<<" | ";
     stringstream aux;
     aux<<setfill('0')<<setw(2)<<dia<<"/"<<setw(2)<<mes<<"/"<<setw(4)<<ano<<" | ";
     cout<<aux.str()<<endl;
-    cout<<setfill('-')<<setw(62)<<'-'<<endl;
+    cout<<setfill('-')<<setw(72)<<'-'<<endl;
 }
