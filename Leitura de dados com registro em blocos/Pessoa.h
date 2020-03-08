@@ -39,6 +39,4 @@ class Pessoa {
 
         //Ler do Arquivo
         bool lerPessoa(fstream &arqIn, fstream &arqOut);
-
-        bool escreveArquivo(fstream &arqOut);
 };

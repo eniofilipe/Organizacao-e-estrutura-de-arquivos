@@ -10,7 +10,7 @@
 using namespace std;
 #include "Pessoa.h"
 
-
+//Constantes para teste de validade da data
 const int dias[] = {31, 28, 31, 30, 31,30, 31, 31, 30, 31, 30, 31 };
 #define BISSEXTO(ano) (ano%400==0 ||(ano%4==0 && ano%100!=0))
 
@@ -31,6 +31,7 @@ Pessoa::Pessoa(string nome, string sobrenome, string telefone, string dataNascim
 
 }
 
+//Teste de validade da data
 bool Pessoa::DataValida(int dia, int mes, int ano){
     if( ano > 0 && mes > 0 && mes <= 12 && dia > 0){
         if(BISSEXTO(ano) && mes==2){
@@ -76,6 +77,7 @@ string Pessoa::getTelefone(){
 }
 string Pessoa::getDataNascimento(){
     
+    //Concatena informações da data em formato dia/mes/ano
     stringstream aux;
     aux<<setfill('0')<<setw(2)<<dia<<"/"<<setw(2)<<mes<<"/"<<setw(4)<<ano;
     return aux.str();
@@ -83,22 +85,25 @@ string Pessoa::getDataNascimento(){
 
 bool Pessoa::lerPessoa(fstream &arqIn){
     
+    //Testa validade do arquivo de entrada
     if( !arqIn.good() && arqIn.eof())
         return false;
     
     char campo[100], diaAux[10], mesAux[10], anoAux[10];
 
     short tamanho;
-
+    //Lê no arquivo, o tamanho do bloco a ser lido a seguir
     arqIn.read(reinterpret_cast<char*>(&tamanho), sizeof(short));
 
     if( !arqIn.good() && arqIn.eof())
         return false;
 
+    //Lê no arquivo o bloco de dados de acordo com o tamanho lido anteriormente
     arqIn.read(campo,tamanho);
     
     stringstream aux(campo);
 
+    //Trata o bloco lido, colocando as informações no variáveis correspondentes
     getline(aux,nome,'|');
     getline(aux,sobrenome,'|');
     getline(aux,telefone,'|');
@@ -110,36 +115,10 @@ bool Pessoa::lerPessoa(fstream &arqIn){
     mes = atoi(mesAux);
     ano = atoi(anoAux);
 
-
-    /*
-    
-    // VERIFICAR QUAL SISTEMA OPERACIONAL
-    #ifdef defined(_WIN32) || defined(WIN32)
-    arqIn.getline(campo, 5, '\n');
-    #else
-    arqIn.getline(campo, 6, '\n');
-    #endif
-    ano = atoi(campo);
-    
-
-    stringstream aux, auxOut;
-
-    aux<<"|"<<nome<<"|"<<sobrenome<<"|"<<telefone<<"|"<<getDataNascimento();
-
-    cout<<aux.str()<<" TAMANHO = "<<aux.str().length()<<endl;
-    auxOut<<aux.str().length()<<aux.str();
-    cout<<auxOut.str()<<endl;
-    arqOut<<auxOut.str();
-
-    */
-
     return true;
 }
 
-bool Pessoa::escreveArquivo(fstream &arqOut){
-
-}
-
+//Imprime na tela o cabaçalho da tabela com os dados
 void Pessoa::imprimeCabecalho(){
     cout<<setfill('-')<<setw(72)<<'-'<<endl;
     cout<<"| "<<"NOME"<<setfill(' ')<<setw(21);
@@ -148,7 +127,7 @@ void Pessoa::imprimeCabecalho(){
     cout<<" | "<<"DT NASC"<<setfill(' ')<<setw(6)<<" | "<<endl;
     cout<<setfill('-')<<setw(72)<<'-'<<endl;
 }
-
+//Imprime na tela os dados organizados em tabela
 void Pessoa::mostraTela(){
 
     cout<<"| "<<nome<<setw(25 - nome.length())<<setfill(' ')<<" | ";
