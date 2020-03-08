@@ -6,13 +6,9 @@
 #include <string>
 #include <iostream>
 #include <type_traits>
-
-using namespace std;
 #include "Pessoa.h"
+using namespace std;
 
-//Constantes para teste de validade da data
-const int dias[] = {31, 28, 31, 30, 31,30, 31, 31, 30, 31, 30, 31 };
-#define BISSEXTO(ano) (ano%400==0 ||(ano%4==0 && ano%100!=0))
 
 //constructors
 Pessoa::Pessoa(){
@@ -20,27 +16,18 @@ Pessoa::Pessoa(){
     sobrenome = "";
     telefone = "";
 
-    dia = mes = ano = 1;
+    novaData.setDataNascimento(1,1,1);
+
 }
 
-Pessoa::Pessoa(string nome, string sobrenome, string telefone, string dataNascimento){
+Pessoa::Pessoa(string nome, string sobrenome, string telefone, int dia, int mes, int ano){
 
     this->nome = nome;
     this->sobrenome = sobrenome;
     this->telefone = telefone;
 
-}
+    novaData.setDataNascimento(dia,mes,ano);   
 
-//Teste de validade da data
-bool Pessoa::DataValida(int dia, int mes, int ano){
-    if( ano > 0 && mes > 0 && mes <= 12 && dia > 0){
-        if(BISSEXTO(ano) && mes==2){
-            return ( dia <=29 );
-        }
-
-        return ( dia <= dias[mes-1]);
-    }
-    return false;
 }
 
 //setters
@@ -54,14 +41,7 @@ void Pessoa::setTelefone(std::string telefone){
     this->telefone = telefone;
 }
 bool Pessoa::setDataNascimento(int dia, int mes, int ano){
-    if( DataValida (dia, mes, ano)){
-    
-        this->dia = dia;
-        this->mes = mes;
-        this->ano = ano;
-        return true;
-    }
-    return false;
+    return novaData.setDataNascimento(dia,mes,ano);
 }
 
 //getters
@@ -77,10 +57,8 @@ string Pessoa::getTelefone(){
 }
 string Pessoa::getDataNascimento(){
     
-    //Concatena informações da data em formato dia/mes/ano
-    stringstream aux;
-    aux<<setfill('0')<<setw(2)<<dia<<"/"<<setw(2)<<mes<<"/"<<setw(4)<<ano;
-    return aux.str();
+    return novaData.getDataNascimento();
+    
 }
 
 bool Pessoa::lerPessoa(fstream &arqIn){
@@ -90,6 +68,7 @@ bool Pessoa::lerPessoa(fstream &arqIn){
         return false;
     
     char campo[100], diaAux[10], mesAux[10], anoAux[10];
+    int dia, mes, ano;
 
     short tamanho;
     //Lê no arquivo, o tamanho do bloco a ser lido a seguir
@@ -115,6 +94,8 @@ bool Pessoa::lerPessoa(fstream &arqIn){
     mes = atoi(mesAux);
     ano = atoi(anoAux);
 
+    novaData.setDataNascimento(dia, mes, ano);
+
     return true;
 }
 
@@ -134,7 +115,7 @@ void Pessoa::mostraTela(){
     cout<<sobrenome<<setfill(' ')<<setw(15 - sobrenome.length())<<" | ";
     cout<<telefone<<" | ";
     stringstream aux;
-    aux<<setfill('0')<<setw(2)<<dia<<"/"<<setw(2)<<mes<<"/"<<setw(4)<<ano<<" | ";
+    aux<<setfill('0')<<setw(2)<<novaData.getDia()<<"/"<<setw(2)<<novaData.getMes()<<"/"<<setw(4)<<novaData.getAno()<<" | ";
     cout<<aux.str()<<endl;
     cout<<setfill('-')<<setw(72)<<'-'<<endl;
 }

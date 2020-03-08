@@ -1,5 +1,6 @@
 #ifndef PESSOA_H_
-#endif PESSOA_H_
+#define PESSOA_H_
+#endif 
 
 #include <iomanip>
 #include <fstream>
@@ -8,6 +9,7 @@
 #include <cstdio>
 #include <string>
 #include <iostream>
+#include "DataNascimento.h"
 
 using namespace std;
 
@@ -15,12 +17,11 @@ class Pessoa {
 
     private:
         std::string nome, sobrenome, telefone;
-        int dia, mes, ano;
-        bool DataValida(int dia, int mes, int ano);
+        DataNascimento novaData;
     public:
         ///constructor
         Pessoa();
-        Pessoa(std::string nome, std::string sobrenome, std::string telefone, std::string dataNascimento);
+        Pessoa(std::string nome, std::string sobrenome, std::string telefone, int dia, int mes, int ano);
 
         //setters 
         void setNome(std::string nome);

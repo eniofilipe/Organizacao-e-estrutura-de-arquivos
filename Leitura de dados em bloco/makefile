@@ -7,6 +7,6 @@ PTHREAD=-pthread
 CCFLAGS=$(DEBUG) $(OPT) $(WARN) $(PTHREAD) -pipe
 LD=g++
 LDFLADS=$(PTHREAD) -export-dynamic
-OBJS=leitura.cpp Pessoa.o
+OBJS=leitura.cpp Pessoa.o DataNascimento.o
 all:$(OBJS)
 	$(LD) -o $(TARGET) $(OBJS)
