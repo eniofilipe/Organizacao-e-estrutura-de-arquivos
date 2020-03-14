@@ -16,15 +16,18 @@ Pessoa::Pessoa(){
     sobrenome = "";
     telefone = "";
 
+    codigo = 0;
+
     novaData.setDataNascimento(1,1,1);
 }
 
 //Construtor cheio
-Pessoa::Pessoa(string nome, string sobrenome, string telefone, int dia, int mes, int ano){
+Pessoa::Pessoa(string nome, string sobrenome, string telefone, int dia, int mes, int ano, int codigo){
 
     this->nome = nome;
     this->sobrenome = sobrenome;
     this->telefone = telefone;
+    this->codigo = codigo;
 
     novaData.setDataNascimento(dia,mes,ano);
 
@@ -43,6 +46,10 @@ void Pessoa::setTelefone(std::string telefone){
 bool Pessoa::setDataNascimento(int dia, int mes, int ano){
     return novaData.setDataNascimento(dia,mes,ano);
 }
+void Pessoa::setCodigo(int codigo){
+    this->codigo = codigo;
+}
+
 
 //getters
 string Pessoa::getNome(){
@@ -59,6 +66,9 @@ string Pessoa::getDataNascimento(){
     
     return novaData.getDataNascimento();
 }
+int Pessoa::getCodigo(){
+    return codigo;
+}
 
 //Faz a leitura do dado no arquivo de entrada e escreve no arquivo de saida
 bool Pessoa::lerPessoa(fstream &arqIn, fstream &arqOut){
@@ -71,6 +81,9 @@ bool Pessoa::lerPessoa(fstream &arqIn, fstream &arqOut){
     int dia, mes, ano;
 
     //Lê uma cadeia de caracteres de certo tamanho no arquivo até um delimitador getline(char*[], tamanho, delimitador)
+    arqIn.getline(campo, 100, '|');
+    codigo = atoi(campo);
+    
     arqIn.getline(campo, 100, '|');
     nome = campo;
     
@@ -99,22 +112,21 @@ bool Pessoa::lerPessoa(fstream &arqIn, fstream &arqOut){
     stringstream aux;
 
     //Concatena os dados numa string para serem registrados no novo arquivo
-    aux<<nome<<"|"<<sobrenome<<"|"<<telefone<<"|"<<getDataNascimento();
+    aux<<"|"<<nome<<"|"<<sobrenome<<"|"<<telefone<<"|"<<getDataNascimento();
     //Lê o tamanho do bloco do registro 
-    short tam =  aux.str().length();
-    //Imprime na tela a string e informa o tamanho lido
-    cout<<aux.str()<<" TAMANHO = "<<tam<<endl;
+    short tam =  aux.str().length() + sizeof(int);
     //Escreve no arquivo o tamanho do bloco em bytes
     arqOut.write(reinterpret_cast<const char*>(&tam), sizeof(short));
     //Escreve o bloco no arquivo
-    arqOut.write(aux.str().c_str(), tam);
+    arqOut.write(reinterpret_cast<const char*>(&codigo), sizeof(int));
+    arqOut.write(aux.str().c_str(), tam-sizeof(int));
 
     return true;
 }
 
 // Mostra os dados na tela
 void Pessoa::mostraTela(){
-
+    cout<<"Código: "<<codigo<<endl;
     cout<<"Nome: "<<nome<<endl;
     cout<<"Sobrenome: "<<sobrenome<<endl;
     cout<<"Telefone: "<<telefone<<endl;

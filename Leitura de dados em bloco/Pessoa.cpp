@@ -16,15 +16,18 @@ Pessoa::Pessoa(){
     sobrenome = "";
     telefone = "";
 
+    codigo = 0;
+
     novaData.setDataNascimento(1,1,1);
 
 }
 
-Pessoa::Pessoa(string nome, string sobrenome, string telefone, int dia, int mes, int ano){
+Pessoa::Pessoa(string nome, string sobrenome, string telefone, int dia, int mes, int ano, int codigo){
 
     this->nome = nome;
     this->sobrenome = sobrenome;
     this->telefone = telefone;
+    this->codigo = codigo;
 
     novaData.setDataNascimento(dia,mes,ano);   
 
@@ -43,6 +46,9 @@ void Pessoa::setTelefone(std::string telefone){
 bool Pessoa::setDataNascimento(int dia, int mes, int ano){
     return novaData.setDataNascimento(dia,mes,ano);
 }
+void Pessoa::setCodigo(int codigo){
+    this->codigo = codigo;
+}
 
 //getters
 string Pessoa::getNome(){
@@ -59,6 +65,9 @@ string Pessoa::getDataNascimento(){
     
     return novaData.getDataNascimento();
     
+}
+int Pessoa::getCodigo(){
+    return codigo;
 }
 
 bool Pessoa::lerPessoa(fstream &arqIn){
@@ -77,12 +86,16 @@ bool Pessoa::lerPessoa(fstream &arqIn){
     if( !arqIn.good() && arqIn.eof())
         return false;
 
+    //Lê código, tamanho de variável do tipo inteiro
+    arqIn.read(reinterpret_cast<char*>(&codigo), sizeof(int));
+
     //Lê no arquivo o bloco de dados de acordo com o tamanho lido anteriormente
-    arqIn.read(campo,tamanho);
+    arqIn.read(campo,tamanho-sizeof(int));
     
     stringstream aux(campo);
 
     //Trata o bloco lido, colocando as informações no variáveis correspondentes
+    getline(aux,nome,'|');
     getline(aux,nome,'|');
     getline(aux,sobrenome,'|');
     getline(aux,telefone,'|');
@@ -101,21 +114,25 @@ bool Pessoa::lerPessoa(fstream &arqIn){
 
 //Imprime na tela o cabaçalho da tabela com os dados
 void Pessoa::imprimeCabecalho(){
-    cout<<setfill('-')<<setw(72)<<'-'<<endl;
+    cout<<setfill('-')<<setw(82)<<'-'<<endl;
+    cout<<"| "<<"CODIGO"<<setfill(' ')<<setw(4);
     cout<<"| "<<"NOME"<<setfill(' ')<<setw(21);
     cout<<" | "<<"SOBRENOME"<<setfill(' ')<<setw(6);
     cout<<" | "<<"TELEFONE"<<setfill(' ')<<setw(10);
     cout<<" | "<<"DT NASC"<<setfill(' ')<<setw(6)<<" | "<<endl;
-    cout<<setfill('-')<<setw(72)<<'-'<<endl;
+    cout<<setfill('-')<<setw(82)<<'-'<<endl;
 }
 //Imprime na tela os dados organizados em tabela
 void Pessoa::mostraTela(){
 
+    stringstream codigoStream;
+    codigoStream << codigo;
+    cout<<"| "<<codigoStream.str()<<setw(10 - codigoStream.str().length())<<setfill(' ');
     cout<<"| "<<nome<<setw(25 - nome.length())<<setfill(' ')<<" | ";
     cout<<sobrenome<<setfill(' ')<<setw(15 - sobrenome.length())<<" | ";
     cout<<telefone<<" | ";
     stringstream aux;
     aux<<setfill('0')<<setw(2)<<novaData.getDia()<<"/"<<setw(2)<<novaData.getMes()<<"/"<<setw(4)<<novaData.getAno()<<" | ";
     cout<<aux.str()<<endl;
-    cout<<setfill('-')<<setw(72)<<'-'<<endl;
+    cout<<setfill('-')<<setw(82)<<'-'<<endl;
 }
