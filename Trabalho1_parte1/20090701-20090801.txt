@@ -1,0 +1,189 @@
+01/07/2009 08:08;Product1;1200;Diners;Bryan Kerrene;New York;NY;United States
+01/08/2009 00:42;Product1;1200;Visa;Family;Los Gatos;CA;United States
+01/08/2009 03:56;Product1;1200;Mastercard;Katherine;New York;NY;United States
+01/08/2009 03:16;Product1;1200;Mastercard;Linda;Miami;FL;United States
+01/08/2009 01:59;Product1;1200;Mastercard;SYLVIA;Vesenaz;Geneve;Switzerland
+01/08/2009 16:24;Product1;1200;Visa;jennifer;Phoenix;AZ;United States
+01/07/2009 07:44;Product1;1200;Mastercard;Marie;Ball Ground;GA;United States
+01/07/2009 15:12;Product2;3600;Visa;Anabela;Flossmoor;IL;United States
+01/07/2009 20:15;Product1;1200;Amex;Nicole;Houston;TX;United States
+01/07/2009 10:01;Product1;1200;Visa;Darren;Pittsboro;NC;United States
+01/07/2009 06:18;Product1;1200;Mastercard;June;Beachwood;OH;United States
+01/07/2009 00:12;Product2;3600;Mastercard;Deirdre;Lausanne;Vaud;Switzerland
+01/08/2009 15:16;Product1;1200;Visa;Dottie;Woodsboro;MD;United States
+01/07/2009 20:22;Product1;1200;Visa;Gina;Red Deer;Alberta;Canada
+01/08/2009 20:32;Product1;1200;Visa;Kim;Calgary;Alberta;Canada
+01/08/2009 13:34;Product1;1200;Visa;Bruce;Belleville;Ontario;Canada
+01/08/2009 13:14;Product1;1200;Visa;Dr. Claudia;Oslo;Oslo;Norway
+01/07/2009 19:50;Product1;1200;Diners;Delphine;Santa Monica;CA;United States
+01/08/2009 07:26;Product1;1200;Mastercard;anne;Bournemouth;England;United Kingdom
+01/08/2009 07:26;Product1;1200;Mastercard;Alexis;Genoa;IL;United States
+01/07/2009 07:19;Product1;1200;Amex;Jocelyn;Bruxelles;Brussels (Bruxelles);Belgium
+01/07/2009 08:21;Product1;1200;Visa;Jannik;Holmenkollen;Oslo;Norway
+01/08/2009 11:55;Product2;3600;Visa;Caren;Braunschweig;Lower Saxony;Germany
+01/08/2009 11:55;Product1;1200;Visa;luciana;Athens;GA;United States
+01/07/2009 06:11;Product2;3600;Visa;Tiffany;Paris;Ile-de-France;France
+01/07/2009 14:15;Product1;1200;Mastercard;Cassandra;San Carlos;CA;United States
+01/08/2009 15:27;Product1;1200;Mastercard;Jennifer;Chicago;IL;United States
+01/08/2009 15:27;Product1;1200;Visa;nicole;Oslo;Oslo;Norway
+01/08/2009 15:27;Product1;1200;Visa;Sean;Wantagh;NY;United States
+01/07/2009 22:29;Product1;1200;Mastercard;lailani;Anchorage;AK;United States
+01/08/2009 04:16;Product1;1200;Visa;Alan;Malahide;Dublin;Ireland
+01/08/2009 04:16;Product2;3600;Mastercard;Anja Langer;Saint Paul;MN;United States
+01/07/2009 19:03;Product2;3600;Mastercard;Cindy;Englewood;CO;United States
+01/07/2009 19:03;Product1;1200;Visa;Simone;San Antonio;TX;United States
+01/07/2009 19:03;Product1;1200;Visa;Hilde;Princeville;HI;United States
+01/08/2009 08:58;Product1;1200;Mastercard;Doug;Huntington;NY;United States
+01/07/2009 04:45;Product1;1200;Amex;Jeremy;London;England;United Kingdom
+01/07/2009 17:51;Product1;1200;Visa;Marie;Dickerson;MD;United States
+01/07/2009 17:51;Product1;1200;Mastercard;Lisa;Princeton;NJ;United States
+01/07/2009 17:51;Product1;1200;Mastercard;Priska;Calgary;Alberta;Canada
+01/07/2009 17:51;Product1;1200;Visa;Katrine;North Tustin;CA;United States
+01/07/2009 08:00;Product1;1200;Mastercard;john;Glan-Munchweiler;Rhineland-Palatinate;Germany
+01/07/2009 08:00;Product2;3600;Visa;Miye;Downingtown;PA;United States
+01/07/2009 08:00;Product1;1200;Diners;Heidi;MT Pleasant;TX;United States
+01/08/2009 18:52;Product1;1200;Visa;Nadine;Belgrade;MT;United States
+01/08/2009 18:41;Product1;1200;Diners;Veronique;Tenafly;NJ;United States
+01/07/2009 10:03;Product1;1200;Mastercard;Emma;Sydney;New South Wales;Australia
+01/07/2009 10:03;Product1;1200;Visa;Marina;Nerang;Queensland;Australia
+01/07/2009 10:03;Product1;1200;Mastercard;Natalie;Bryceville;FL;United States
+01/07/2009 12:55;Product1;1200;Amex;Fiona;Stamford;CT;United States
+01/07/2009 12:55;Product1;1200;Mastercard;burt;Rathfarnham;Dublin;Ireland
+01/07/2009 12:55;Product2;3600;Visa;Maggie;Paris;Ile-de-France;France
+01/07/2009 12:55;Product1;1200;Mastercard;Stanford;Howell;MI;United States
+01/07/2009 18:53;Product1;1200;Visa;Marie-Christine;Durham;NC;United States
+01/07/2009 18:53;Product1;1200;Mastercard;Gabriella;Austin;TX;United States
+01/08/2009 13:19;Product1;1200;Mastercard;valerie et nicolas;Glenn Dale;MD;United States
+01/08/2009 00:04;Product1;1200;Visa;ZOE;New Plymouth City;Taranaki;New Zealand
+01/08/2009 00:04;Product1;1200;Mastercard;nihan;Roanoke;VA;United States
+01/08/2009 00:04;Product1;1200;Visa;alan;Norcross;GA;United States
+01/07/2009 13:49;Product1;1200;Diners;megan;West Hills;CA;United States
+01/07/2009 08:03;Product1;1200;Amex;maria;Ottawa;Ontario;Canada
+01/07/2009 08:03;Product1;1200;Visa;Elaine;Vienna;VA;United States
+01/07/2009 08:03;Product1;1200;Visa;Madison;Torbay;Auckland;New Zealand
+01/08/2009 08:11;Product1;1200;Diners;Karin;High Wycombe;England;United Kingdom
+01/08/2009 08:11;Product2;3600;Amex;ron;Tsaritsyno;Moscow City;Russia
+01/07/2009 06:33;Product1;1200;Diners;Therese;Clontarf;Dublin;Ireland
+01/07/2009 19:06;Product2;3600;Amex;Brittany;Orlando;FL;United States
+01/07/2009 19:06;Product1;1200;Mastercard;Sandrine;Walnut Creek;CA;United States
+01/07/2009 14:55;Product1;1200;Visa;Jennifer;Drogheda;Louth;Ireland
+01/07/2009 14:55;Product1;1200;Visa;samuel;Saddle Brook;NJ;United States
+01/08/2009 14:04;Product1;1200;Amex;AngelinaPatrick;San Diego;CA;United States
+01/08/2009 14:04;Product1;1200;Visa;Sven;Issaquah;WA;United States
+01/08/2009 13:33;Product1;1200;Visa;Mimi;Monte-Carlo;MO;Monaco
+01/08/2009 13:33;Product1;1200;Visa;Liann;Monaco;MO;Monaco
+01/08/2009 13:33;Product1;1200;Mastercard;Sarah;Floyds Knobs;IN;United States
+01/07/2009 05:53;Product1;1200;Visa;Lauren;Gries;Rhineland-Palatinate;Germany
+01/07/2009 05:53;Product3;7500;Visa;Michael;Pietermaritzburg;KwaZulu-Natal;South Africa
+01/07/2009 05:53;Product1;1200;Visa;Jodi;Sutton Valence;England;United Kingdom
+01/07/2009 05:53;Product1;1200;Mastercard;simone;Lyngby;Kobenhavn;Denmark
+01/08/2009 10:13;Product1;1200;Diners;Benoit;Fort Saint James;British Columbia;Canada
+01/08/2009 19:29;Product2;3600;Mastercard;PATRICK;Ban Khlong Sip;Krung Thep;Thailand
+01/08/2009 12:04;Product1;1200;Visa;jennifer;Morro Bay;CA;United States
+01/07/2009 01:42;Product1;1200;Mastercard;Emily;Vecmilgravis;Riga;Latvia
+01/07/2009 13:01;Product2;3600;Visa;Niki;Trelex;Vaud;Switzerland
+01/07/2009 13:01;Product1;1200;Visa;Sarah;Ornex;Rhone-Alpes;France
+01/07/2009 08:26;Product1;1200;Diners;C;Chandler;AZ;United States
+01/07/2009 08:26;Product1;1200;Visa;chris;Kjobenhavn;Staden Kobenhavn;Denmark
+01/08/2009 04:15;Product1;1200;Visa;Elyssa;Gdansk;Pomorskie;Poland
+01/08/2009 04:15;Product1;1200;Visa;michelle;Arklow;Wicklow;Ireland
+01/08/2009 04:15;Product1;1200;Mastercard;Alicia;Lincoln;NE;United States
+01/07/2009 07:28;Product1;1200;Amex;Cherish;Anchorage;AK;United States
+01/07/2009 07:28;Product1;1200;Visa;Shona;Mornington;Meath;Ireland
+01/07/2009 07:28;Product1;1200;Mastercard;Abikay;Fullerton;CA;United States
+01/08/2009 03:29;Product1;1200;Visa;amanda;Liverpool;England;United Kingdom
+01/08/2009 23:40;Product1;1200;Visa;Jacob;Lindfield;New South Wales;Australia
+01/08/2009 23:40;Product1;1200;Mastercard;DOREEN;Madrid;Madrid;Spain
+01/08/2009 23:40;Product1;1200;Diners;eugenia;Wisconsin Rapids;WI;United States
+01/07/2009 20:01;Product1;1200;Visa;Karen;Austin;TX;United States
+01/07/2009 20:01;Product1;1200;Visa;Bea;Chicago;IL;United States
+01/07/2009 13:28;Product1;1200;Visa;Elizabeth;Calne;England;United Kingdom
+01/07/2009 13:28;Product2;3600;Amex;Michael;Los Angeles;CA;United States
+01/07/2009 12:39;Product2;3600;Visa;Natasha;Milano;Lombardy;Italy
+01/07/2009 12:39;Product2;3600;Mastercard;Meredith;Kloten;Zurich;Switzerland
+01/07/2009 12:39;Product1;1200;Mastercard;Nicole;Fayetteville;NC;United States
+01/07/2009 12:39;Product1;1200;Visa;Ryan;Simpsonville;SC;United States
+01/07/2009 12:39;Product1;1200;Visa;Mary;Auckland;Auckland;New Zealand
+01/08/2009 12:46;Product1;1200;Mastercard;Trine Marie;Orillia;Ontario;Canada
+01/08/2009 12:46;Product1;1200;Diners;Kim;Paris;Ile-de-France;France
+01/08/2009 12:46;Product1;1200;Visa;John;San Jose;CA;United States
+01/08/2009 06:29;Product1;1200;Visa;Rich;Ingelheim-Mitte;Rhineland-Palatinate;Germany
+01/08/2009 02:46;Product1;1200;Mastercard;Ken;Sidcup;England;United Kingdom
+01/08/2009 02:46;Product1;1200;Visa;Tori;Minneapolis;MN;United States
+01/08/2009 02:46;Product2;3600;Mastercard;Hanne;Phoenix;MD;United States
+01/08/2009 20:52;Product1;1200;Visa;Pam and Rob;Yorba Linda;CA;United States
+01/07/2009 13:57;Product1;1200;Visa;Elsa;Waiwera;Auckland;New Zealand
+01/07/2009 13:57;Product1;1200;Amex;kathleen kane;Jamaica Plain;MA;United States
+01/07/2009 13:57;Product1;1200;Diners;Selene;Oslo;Oslo;Norway
+01/07/2009 13:57;Product1;1200;Visa;Christy;Setagaya;Tokyo;Japan
+01/07/2009 13:57;Product2;3600;Visa;Hanna Agla;Donauworth;Bayern;Germany
+01/07/2009 13:57;Product1;1200;Visa;Elyse;Bandon;Cork;Ireland
+01/07/2009 13:57;Product1;1200;Mastercard;Alexis;Ehingen an der Donau;Baden-Wurttemberg;Germany
+01/07/2009 13:28;Product1;1200;Mastercard;Mary;Baile Atha Bui;Meath;Ireland
+01/07/2009 13:28;Product1;1200;Visa;Oscar;Chamonix-Mont-Blanc;Rhone-Alpes;France
+01/07/2009 13:28;Product1;1200;Diners;Suejean;Gingins;Vaud;Switzerland
+01/07/2009 13:28;Product1;1200;Amex;ann;Boca Raton;FL;United States
+01/07/2009 13:28;Product1;1200;Visa;Renee;Chaska;MN;United States
+01/07/2009 13:28;Product1;1200;Visa;Catherine;Hghlnds Ranch;CO;United States
+01/07/2009 13:28;Product1;1200;Amex;Rhonda;Atlanta;GA;United States
+01/07/2009 13:28;Product1;1200;Amex;alix;Tenafly;NJ;United States
+01/08/2009 23:00;Product1;1200;Visa;Dickson;Kemerburgaz;Istanbul;Turkey
+01/08/2009 23:00;Product1;1200;Diners;Howard;Worcester;England;United Kingdom
+01/08/2009 23:00;Product1;1200;Visa;Dana;Thurles;Tipperary;Ireland
+01/08/2009 23:00;Product1;1200;Mastercard;Nola;Den Haag;Zuid-Holland;Netherlands
+01/08/2009 23:00;Product1;1200;Visa;Elizabeth;Cos Cob;CT;United States
+01/08/2009 23:00;Product2;3600;Visa;minjeong;Bern;Bern;Switzerland
+01/08/2009 23:00;Product1;1200;Visa;Matt;Leicester;England;United Kingdom
+01/08/2009 10:44;Product1;1200;Visa;Catherine;Mount Forest;Ontario;Canada
+01/08/2009 10:44;Product1;1200;Mastercard;Sarah;Ridgefield;CT;United States
+01/08/2009 10:44;Product1;1200;Visa;sorcha;Porto Alegre;Rio Grande do Sul;Brazil
+01/08/2009 10:44;Product1;1200;Visa;sorcha;Cartierville;Quebec;Canada
+01/07/2009 13:38;Product1;1200;Mastercard;Mary;Stuttgart;Baden-Wurttemberg;Germany
+01/07/2009 13:38;Product1;1200;Visa;Ronja;Manhattan;NY;United States
+01/07/2009 13:38;Product1;1200;Visa;Nicola;Sneem;Kerry;Ireland
+01/07/2009 13:38;Product1;1200;Amex;BURCAK;Alpharetta;GA;United States
+01/08/2009 09:43;Product1;1200;Visa;Kasey;Aix-en-Provence;Provence-Alpes-Cote d'Azur;France
+01/08/2009 09:43;Product2;3600;Amex;Olympe;Lidingo;Stockholm;Sweden
+01/08/2009 09:43;Product1;1200;Visa;James;Edmonton;Alberta;Canada
+01/07/2009 10:49;Product2;3600;Visa;VIOLETA;Silver Spring;MD;United States
+01/07/2009 10:52;Product1;1200;Visa;claire;Ballyneety;Limerick;Ireland
+01/07/2009 10:52;Product1;1200;Mastercard;Nathalie;Haymarket;VA;United States
+01/07/2009 10:52;Product1;1200;Mastercard;Daria;George Town;GT;Cayman Isls
+01/07/2009 19:18;Product1;1200;Mastercard;loudon;Ottawa;Ontario;Canada
+01/08/2009 11:14;Product2;3600;Visa;Liz;Langnau;Zurich;Switzerland
+01/08/2009 19:26;Product2;3600;Visa;Christian;Mableton;GA;United States
+01/08/2009 12:03;Product1;1200;Diners;Andrea;Calgary;Alberta;Canada
+01/08/2009 12:03;Product1;1200;Mastercard;Jessica;Chiefland;FL;United States
+01/08/2009 12:03;Product1;1200;Mastercard;David;Stavenger;Rogaland;Norway
+01/08/2009 02:49;Product2;3600;Mastercard;Caroline;Begnins;Vaud;Switzerland
+01/08/2009 02:49;Product1;1200;Visa;Riche Lou;Newton;MA;United States
+01/07/2009 09:54;Product1;1200;Visa;Julie;Ashford;England;United Kingdom
+01/07/2009 13:26;Product1;1200;Visa;Sarah;Warwick;Quebec;Canada
+01/07/2009 13:26;Product1;1200;Diners;Simone;Watford;England;United Kingdom
+01/07/2009 13:26;Product1;1200;Visa;Jackie;Waterford;Waterford;Ireland
+01/07/2009 13:26;Product1;1200;Visa;giovanna;Pruszkow;Mazowieckie;Poland
+01/07/2009 13:26;Product1;1200;Visa;Elizabeth;Hamilton;Hamilton;Bermuda
+01/07/2009 13:26;Product2;3600;Visa;Lisa;Ottawa;Ontario;Canada
+01/07/2009 13:26;Product1;1200;Mastercard;Maki;Montgomery;TX;United States
+01/07/2009 13:26;Product1;1200;Amex;Anjan;Tokyo;Tokyo;Japan
+01/07/2009 13:26;Product1;1200;Mastercard;Sarah;Manteno;IL;United States
+01/07/2009 13:26;Product1;1200;Mastercard;Niamh;Benoni;Gauteng;South Africa
+01/07/2009 20:55;Product1;1200;Mastercard;Esther;Cincinnati;OH;United States
+01/07/2009 20:55;Product1;1200;Visa;Elizabeth;North Eastham;MA;United States
+01/07/2009 20:55;Product2;3600;Visa;marie-louise;Sitka;AK;United States
+01/07/2009 20:55;Product2;3600;Mastercard;Tanya;Carcross;Yukon Territory;Canada
+01/07/2009 20:55;Product1;1200;Mastercard;Detlev;Taby;Stockholm;Sweden
+01/07/2009 20:55;Product2;3600;Visa;Stephen;Calgary;Alberta;Canada
+01/07/2009 18:15;Product1;1200;Mastercard;Selma;Greenville;TX;United States
+01/07/2009 12:06;Product1;1200;Visa;Erica;Nadur;NN;Malta
+01/07/2009 12:06;Product1;1200;Diners;Hale;Morrison;CO;United States
+01/07/2009 12:06;Product1;1200;Visa;Rosemary;Cobham;England;United Kingdom
+01/07/2009 13:19;Product1;1200;Visa;Darian;Izmir;Izmir;Turkey
+01/07/2009 13:19;Product1;1200;Mastercard;Kevin;Hollywood;CA;United States
+01/07/2009 13:19;Product1;1200;Visa;Alyssa;Brighton;England;United Kingdom
+01/07/2009 13:19;Product1;1200;Visa;Hale;Hawera;Taranaki;New Zealand
+01/07/2009 17:48;Product1;1200;Mastercard;Alex;Augusta;GA;United States
+01/07/2009 17:48;Product2;3600;Mastercard;Anke;Avalon;New South Wales;Australia
+01/07/2009 19:48;Product2;3600;Mastercard;TRICIA;Sydney;New South Wales;Australia
+01/07/2009 19:48;Product1;1200;Mastercard;smith;Lahti;Etela-Suomen Laani;Finland
+01/08/2009 11:55;Product1;1200;Diners;julie;Haverhill;England;United Kingdom
